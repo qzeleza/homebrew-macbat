@@ -3,9 +3,9 @@
 class Macbat < Formula
   desc "Утилита для мониторинга и управления зарядом батареи на ноутбуках с macOS"
   homepage "https://github.com/zeleza/macbat"
-  url "https://github.com/zeleza/macbat/archive/refs/tags/v2.1.0.tar.gz"
-  version "2.1.1"
-  sha256 "6c11ade9dfecea6866513b5874a20678961c32be073b06c12253262f82055149"
+  url "https://github.com/qzeleza/macbat/archive/refs/tags/v2.1.2.tar.gz"
+  version "v2.1.2"
+  sha256 "ec6959bd96430ab12731f2da9a0aeb9edf3d853fe67763c53fc93f34ce3455c0"
   license "Apache-2.0"
   head "https://github.com/zeleza/macbat.git", branch: "main"
 
@@ -14,9 +14,6 @@ class Macbat < Formula
   depends_on xcode: :build  # Необходимо для CGO
 
   def install
-    # Настройка переменных окружения для CGO
-    ENV["CGO_ENABLED"] = "1"
-    
     # Встраивание версии и даты сборки
     ldflags = %W[
       -s -w
