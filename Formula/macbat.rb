@@ -1,15 +1,15 @@
 class Macbat < Formula
   desc "Утилита мониторинга аккумулятора (binary)"
   homepage "https://github.com/qzeleza/macbat"
-  version "v2.1.11"
+  version "v2.1.12"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/qzeleza/macbat/releases/download/v2.1.11/macbat-darwin-arm64.tar.gz"
-      sha256 "690b37c87a6ba7723606fb4c353a9bdecf23af804ca169baecd8b4dd1352d765"
+      url "https://github.com/qzeleza/macbat/releases/download/v2.1.12/macbat-darwin-arm64.tar.gz"
+      sha256 "8b4d6b71154cdfd36944d22fb205f04e3b9658f484005ba35aae50d6c40d3b30"
     else
-      url "https://github.com/qzeleza/macbat/releases/download/v2.1.11/macbat-darwin-amd64.tar.gz"
-      sha256 "cad23f22e17deeea026c060d9f75d81cecdf1ab4a21d2e018e7c524b6a49b090"
+      url "https://github.com/qzeleza/macbat/releases/download/v2.1.12/macbat-darwin-amd64.tar.gz"
+      sha256 "1773f5245eb01de91eef434ab3952b9304e135cfffa64b004451bfc7c29762ed"
     end
   end
 
